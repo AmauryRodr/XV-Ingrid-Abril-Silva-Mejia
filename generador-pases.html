@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#6b1832">
+  <title>Generar pases | XV de Ingrid</title>
+  <link rel="stylesheet" href="xv.css">
+</head>
+<body>
+  <main class="pass-maker">
+    <div class="pass-maker__panel">
+      <p class="eyebrow">Herramienta local de la familia</p>
+      <h1>Generar pase</h1>
+      <ol class="pass-maker__instructions">
+        <li>Escribe el nombre completo del invitado.</li>
+        <li>Elige el cupo que le asignaste, de 2 a 10 personas.</li>
+        <li>Pega el enlace público de la invitación.</li>
+        <li>Pulsa <strong>Crear imagen del pase</strong> y luego descarga el PNG.</li>
+        <li>Envía al invitado la imagen descargada junto con el enlace.</li>
+      </ol>
+      <p>El pase se genera aquí mismo en tu dispositivo. No compartas esta página del generador con tus invitados.</p>
+      <form class="pass-maker__form" id="form-pase">
+        <label for="invitado">Nombre del invitado</label>
+        <input id="invitado" name="invitado" type="text" maxlength="100" autocomplete="off" placeholder="Nombre completo" required>
+        <label for="cupo">Cupo asignado</label>
+        <select id="cupo" name="cupo" required>
+          <option value="2">2 invitados</option>
+          <option value="3">3 invitados</option>
+          <option value="4">4 invitados</option>
+          <option value="5">5 invitados</option>
+          <option value="6">6 invitados</option>
+          <option value="7">7 invitados</option>
+          <option value="8">8 invitados</option>
+          <option value="9">9 invitados</option>
+          <option value="10">10 invitados</option>
+        </select>
+        <label for="enlace-invitacion">Enlace publicado de la invitación</label>
+        <input id="enlace-invitacion" name="enlace" type="url" inputmode="url" placeholder="https://tu-sitio.com/index.html" required>
+        <button class="button button--dark" type="submit">Crear imagen del pase</button>
+      </form>
+      <p class="rsvp__message" id="mensaje-pase" role="status" aria-live="polite"></p>
+      <section class="pass-maker__result" id="resultado-pase" hidden>
+        <img class="pass-maker__preview" id="vista-pase" alt="Vista previa del pase con su código QR">
+        <a class="button button--dark" id="descargar-pase" download="pase-xv-ingrid.png">Descargar imagen PNG</a>
+        <button class="button button--dark" id="copiar-enlace" type="button">Copiar enlace de la invitación</button>
+        <p>Envía la imagen descargada y el enlace copiado. El QR abrirá la invitación con el cupo indicado.</p>
+      </section>
+    </div>
+  </main>
+  <canvas id="lienzo-pase" width="1000" height="1500" hidden></canvas>
+  <script src="qrcode.min.js"></script>
+  <script src="generador-pases.js"></script>
+</body>
+</html>

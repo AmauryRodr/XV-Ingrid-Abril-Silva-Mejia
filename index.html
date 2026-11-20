@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#6b1832">
+    <meta name="description" content="Te invitamos a celebrar una noche muy especial: mis XV años.">
+    <title>Mis XV años | Una noche inolvidable</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="xv.css">
+</head>
+
+
+<body>
+  <div class="welcome" id="sobre-inicial" role="dialog" aria-modal="true" aria-labelledby="welcome-title">
+    <div class="welcome__card">
+      <div class="welcome__face welcome__face--front">
+        <div class="welcome__letter">
+          <span class="welcome__ornament" aria-hidden="true">XV <span>✿</span></span>
+          <p class="eyebrow">Una noche para celebrar</p>
+          <h1 id="welcome-title">Con mucha ilusión te invito a</h1>
+          <img class="welcome__photo" src="vestimenta.jpg" alt="Ingrid con su vestido de quinceañera">
+          <p class="welcome__names">Mis XV años</p>
+          <h2 class="welcome__guest-of-honor">🤎 Ingrid Abril Silva Mejìa 🤎</h2>
+          <button class="button button--rose" id="abrir-invitacion" type="button">Abrir invitación</button>
+        </div>
+        <span class="welcome__flap" aria-hidden="true"></span>
+        <span class="welcome__front" aria-hidden="true"></span>
+      </div>
+      <div class="welcome__face welcome__face--back" aria-hidden="true">
+        <span class="welcome__back-ornament">✿</span>
+        <span class="welcome__back-title">Mis XV años</span>
+        <span class="welcome__back-name">Ingrid Abril</span>
+        <span class="welcome__back-ornament">♡</span>
+      </div>
+    </div>
+  </div>
+
+  <audio id="musica-xv" loop preload="none">
+    <source src="The_Cranberries_Dreams_Dir_Nico_Soultanakis720P_HDmp3.mp3" type="audio/mpeg">
+  </audio>
+
+  <main id="contenido-principal" hidden>
+    <button class="music-toggle" id="btn-musica" type="button" aria-label="Reproducir música" title="Reproducir música">
+      <svg class="music-toggle__monkey" viewBox="0 0 100 100" aria-hidden="true">
+        <circle cx="19" cy="43" r="16" fill="#713b28"/>
+        <circle cx="81" cy="43" r="16" fill="#713b28"/>
+        <circle cx="19" cy="43" r="9" fill="#e99a83"/>
+        <circle cx="81" cy="43" r="9" fill="#e99a83"/>
+        <ellipse cx="50" cy="51" rx="35" ry="37" fill="#8d4b2f"/>
+        <ellipse cx="50" cy="60" rx="25" ry="23" fill="#f3c99e"/>
+        <ellipse cx="39" cy="48" rx="4" ry="5" fill="#2c1b19"/>
+        <ellipse cx="61" cy="48" rx="4" ry="5" fill="#2c1b19"/>
+        <ellipse cx="50" cy="61" rx="8" ry="6" fill="#713b28"/>
+        <path d="M43 69q7 7 14 0" fill="none" stroke="#713b28" stroke-linecap="round" stroke-width="2.5"/>
+        <circle cx="79" cy="79" r="16" fill="#f6c1d5" stroke="#fff" stroke-width="3"/>
+        <path d="M78 69v12.5a4.5 4.5 0 1 1-3-4.25V72l11-2v9.5a4.5 4.5 0 1 1-3-4.25V68z" fill="#6b1832"/>
+      </svg>
+      <span class="music-toggle__label">Reproducir música</span>
+    </button>
+    <header class="hero" id="inicio">
+      <img class="hero__photo" src="2.jpg" alt="Fotografía familiar" fetchpriority="high">
+      <div class="hero__shade"></div>
+      <div class="hero__content">
+        <p class="eyebrow eyebrow--light">Con la bendición de mi familia</p>
+        <h1>Mis <span>XV</span></h1>
+        <p class="hero__subtitle">Una noche inolvidable</p>
+        <span class="ornament-line" aria-hidden="true"></span>
+        <p class="hero__date">6 de febrero de 2027 <span>·</span> 5:00 PM · Misión Pastoral San Benito Abad</p>
+        <div class="hero__countdown" id="countdown" role="timer" aria-label="Tiempo restante para mis XV años"></div>
+        <a class="scroll-link" href="#invitacion">Descubrir la invitación <span aria-hidden="true">↓</span></a>
+      </div>
+    </header>
+
+    <section class="invitation section-reveal" id="invitacion">
+      <div class="invitation__inner">
+        <p class="eyebrow">Una fecha muy especial</p>
+        <h2>¡Te espero para<br>celebrar mis XV!</h2>
+        <p class="invitation__copy">Quiero compartir contigo una noche llena de alegría, música y momentos inolvidables.</p>
+        <div class="invitation__details">
+          <div><span>Fecha</span><strong>06 · 02 · 2027</strong></div>
+          <div><span>Ceremonia</span><strong>5:00 PM</strong></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="family section-reveal">
+      <div class="family__confettis" aria-hidden="true"></div>
+      <div class="section-heading">
+        <p class="eyebrow">Con todo mi cariño</p>
+        <h2>Mi familia</h2>
+        <span class="ornament-line" aria-hidden="true"></span>
+      </div>
+      <div class="family__columns">
+        <div class="family__group">
+          <p class="eyebrow">Con amor</p>
+          <h3>Maribel Mejìa</h3>
+        </div>
+        <div class="family__divider" aria-hidden="true">&amp;</div>
+        <div class="family__group">
+          <p class="eyebrow">Con amor</p>
+          <h3>Oscar Silva</h3>
+        </div>
+      </div>
+      <div class="family__godparents">
+        <p class="eyebrow">Mis padrinos</p>
+        <h3>Juan Silva  <br> &   <br> Socorro Martinez</h3>
+      </div>
+    </section>
+
+    <section class="when section-reveal" id="donde">
+      <div class="section-heading">
+        <p class="eyebrow">Celebra conmigo</p>
+        <h2>El gran día</h2>
+        <span class="ornament-line" aria-hidden="true"></span>
+      </div>
+      <div class="when__grid">
+        <article class="venue">
+          <p class="venue__number">01</p>
+          <p class="eyebrow">Misa de acción de gracias</p>
+          <h3>Misión Pastoral San Benito Abad</h3>
+          <p class="venue__detail">6 de febrero de 2027<br>5:00 PM</p>
+          <a class="text-link" href="https://www.google.com/maps/place/Misi%C3%B3n+Pastoral+San+Benito+Abad/@19.6122357,-99.2534161,2339a,75y,11.13h,90t/data=!3m7!1e1!3m5!1sdpe-6t6GuTnbYP29qfIzUw!2e0!6shttps:%2F%2Fstreetviewpixels-pa.clients6.google.com%2Fv1%2Fthumbnail%3Fcb_client%3Dmaps_sv.tactile%26w%3D900%26h%3D600%26pitch%3D0%26panoid%3Ddpe-6t6GuTnbYP29qfIzUw%26yaw%3D11.132422!7i16384!8i8192!4m14!1m7!3m6!1s0x85d21c2103e4a191:0x420dc3107eb831f0!2sMisi%C3%B3n+Pastoral+San+Benito+Abad!8m2!3d19.6126262!4d-99.2533243!16s%2Fg%2F1tlw9f0z!3m5!1s0x85d21c2103e4a191:0x420dc3107eb831f0!8m2!3d19.6126262!4d-99.2533243!16s%2Fg%2F1tlw9f0z?hl=es&entry=ttu&g_ep=EgoyMDI2MTEwNC4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noreferrer">Ver ubicación <span aria-hidden="true">↗</span></a>
+          <div class="map-frame">
+            <iframe title="Ubicación de la Iglesia " src="https://www.google.com/maps/embed?pb=!4v1794340096740!6m8!1m7!1sdpe-6t6GuTnbYP29qfIzUw!2m2!1d19.61223569526298!2d-99.25341608634376!3f11.132422!4f0!5f0.7820865974627469" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        </article>
+        <article class="venue venue--reception">
+          <p class="venue__number">02</p>
+          <p class="eyebrow">Después de la misa</p>
+          <h3>Recepción</h3>
+          <p class="venue__detail">Salón de Eventos Paraíso del Lago</p>
+          <iframe src="https://www.google.com/maps/embed?pb=!4v1794340996801!6m8!1m7!1sdqUSLPzIxo-maxhY0aLf6w!2m2!1d19.63039545150754!2d-99.250077140533!3f251.9183203201843!4f-6.220712863128952!5f0.7820865974627469" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+          <details class="venue__calendar">
+            <summary class="btn-calendar">📅 Guarda la fecha en tu calendario <span aria-hidden="true">⌄</span></summary>
+            <div class="venue__calendar-menu">
+              <a class="btn-calendar" href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=Recepci%C3%B3n%20de%20mis%20XV%20a%C3%B1os&amp;dates=20270206T180000/20270207T000000&amp;ctz=America%2FMexico_City&amp;details=Recepci%C3%B3n%20de%20XV%20a%C3%B1os.%20%C2%A1Nos%20espera%20una%20tarde%20llena%20de%20alegr%C3%ADa!&amp;location=Sal%C3%B3n%20de%20Eventos%20Para%C3%ADso%20del%20Lago" target="_blank" rel="noreferrer">Agregar a Google Calendar</a>
+              <a class="btn-calendar" href="recepcion.ics">Agregar a Apple Calendar</a>
+            </div>
+          </details>
+          <p class="venue__note">¡Nos espera una tarde llena de alegría!</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="schedule section-reveal" id="programa">
+      <div class="section-heading">
+        <p class="eyebrow">Una noche para recordar</p>
+        <h2>Itinerario</h2>
+        <span class="ornament-line" aria-hidden="true"></span>
+      </div>
+      <ol class="schedule__list">
+        <li><span class="schedule__icon" aria-hidden="true"><span class="schedule__water"></span><span class="schedule__symbol">⛪</span></span><time>17:00 HRS</time><span>Misa de acción de gracias</span></li>
+        <li><span class="schedule__icon" aria-hidden="true"><span class="schedule__water"></span><span class="schedule__symbol">🍽</span></span><time>18:30–20:00 HRS</time><span>Cena</span></li>
+        <li><span class="schedule__icon" aria-hidden="true"><span class="schedule__water"></span><span class="schedule__symbol">💃</span></span><time>20:00 HRS</time><span>Vals de la quinceañera</span></li>
+        <li><span class="schedule__icon" aria-hidden="true"><span class="schedule__water"></span><span class="schedule__symbol">🎂</span></span><time>21:30 HRS</time><span>Partida del pastel</span></li>
+        <li><span class="schedule__icon" aria-hidden="true"><span class="schedule__water"></span><span class="schedule__symbol">♫</span></span><time>22:00 HRS en adelante...</time><span>Celebración</span></li>
+      </ol>
+    </section>
+
+    <section class="celebration-info section-reveal">
+      <article class="info-panel dress-code">
+        <span class="info-panel__icon" aria-hidden="true">✿</span>
+        <p class="eyebrow">Código de vestimenta</p>
+        <h2>Formal</h2>
+        <h2></h2>🌹 El color vino está reservado para la quinceañera. 🌹</h2>
+      </article>
+      <article class="info-panel gift-table">
+        <span class="info-panel__icon" aria-hidden="true">♡</span>
+        <p class="eyebrow">Mesa de regalos</p>
+        <h2>Tu compañía es mi mejor regalo</h2>
+        <!-- <p>Si deseas tener un detalle conmigo, un sobre será muy bien recibido.</p> -->
+        <button class="gift-table__surprise" id="gift-surprise" type="button" aria-label="Toca el regalo para lanzar confeti">
+          <img class="gift-table__image" src="regalo.jpg" alt="">
+          <span class="gift-table__confetti" aria-hidden="true"></span>
+        </button>
+        <p class="gift-table__hint">Toca el regalo para lanzar confeti</p>
+        <p>¿Quieres sorprenderme? Un detallito tuyo me hará muchísima ilusión. ¡Gracias por tu cariño!</p>
+        <!-- <div class="gift-links">
+          <a class="gift-link gift-link--primary" href="https://www.elpalaciodehierro.com/listaregalos" target="_blank" rel="noreferrer">Abrir mesa de regalos <span aria-hidden="true">↗</span></a>
+          <a class="gift-link" href="https://www.elpalaciodehierro.com/" target="_blank" rel="noreferrer">Visitar Palacio de Hierro <span aria-hidden="true">↗</span></a>
+        </div> -->
+      </article>
+    </section>
+
+    <!-- <section class="gallery section-reveal" id="fotos">
+      <div class="section-heading">
+        <p class="eyebrow">Un recuerdo de esta etapa tan especial</p>
+        <h2>Fotos de la quinceañera</h2>
+        <span class="ornament-line" aria-hidden="true"></span>
+      </div>
+      <div class="carousel">
+        <button class="carousel__button" id="anterior" type="button" aria-label="Foto anterior">←</button>
+        <figure class="carousel__frame">
+          <img id="imagen-carrusel" src="7.jpg" alt="Foto de ejemplo de la quinceañera, 1 de 7">
+          <figcaption id="foto-contador" aria-live="polite">01 / 07</figcaption>
+        </figure>
+        <button class="carousel__button" id="siguiente" type="button" aria-label="Foto siguiente">→</button>
+      </div>
+    </section> -->
+
+    <!-- <section class="favorite-people section-reveal" id="personas-favoritas">
+      <div class="section-heading">
+        <p class="eyebrow">Siempre cerca de mi corazón</p>
+        <h2>Mis personas favoritas</h2>
+        <span class="ornament-line" aria-hidden="true"></span>
+      </div>
+      <div class="favorite-people__grid">
+        <article class="favorite-person">
+          <div class="favorite-person__caption"><p class="eyebrow">Mi raíz y mi hogar</p><h3>Mis papás</h3></div>
+          <img src="5.jpg" alt="Foto de ejemplo de mis papás" loading="lazy">
+        </article>
+        <article class="favorite-person">
+          <div class="favorite-person__caption"><p class="eyebrow">Mis compañeros de aventuras</p><h3>Mis hermanos</h3></div>
+          <img src="4.jpg" alt="Foto de ejemplo de mis hermanos" loading="lazy">
+        </article>
+        <article class="favorite-person">
+          <div class="favorite-person__caption"><p class="eyebrow">Un amor que me guía</p><h3>Mis abuelos</h3></div>
+          <img src="3.jpg" alt="Foto de ejemplo de mis abuelos" loading="lazy">
+        </article>
+      </div>
+    </section> -->
+
+    <section class="trivia section-reveal" id="trivia">
+      <div class="section-heading">
+        <p class="eyebrow">¿Qué tanto sabes de esta noche?</p>
+        <h2>Trivia de mis XV</h2>
+        <span class="ornament-line" aria-hidden="true"></span>
+        <p class="trivia__intro">Responde estas preguntas y descubre cuántas aciertas.</p>
+      </div>
+      <div class="trivia__game" id="trivia-juego">
+        <p class="trivia__progress" id="trivia-progreso" aria-live="polite">5 preguntas</p>
+        <h3 class="trivia__question" id="trivia-pregunta">¿Lista o listo para jugar?</h3>
+        <div class="trivia__options" id="trivia-opciones"></div>
+        <p class="trivia__feedback" id="trivia-mensaje" aria-live="polite"></p>
+        <button class="button button--dark" id="trivia-iniciar" type="button">Comenzar trivia</button>
+      </div>
+    </section>
+
+    <!-- <section class="music section-reveal" id="celebracion">
+      <div class="section-heading">
+        <p class="eyebrow">La fiesta continúa</p>
+        <h2>Que suene la música</h2>
+        <span class="ornament-line" aria-hidden="true"></span>
+        <p class="music__note">Grupo invitado: La Azendencia</p>
+      </div>
+      <div class="video-frame">
+        <video controls preload="metadata" poster="la_azendenciajpg.jpg">
+          <source src="la_azendencia.mp4" type="video/mp4">
+          Tu navegador no soporta video HTML5.
+        </video>
+      </div>
+    </section> -->
+
+    <section class="memories section-reveal">
+      <div class="section-heading">
+        <p class="eyebrow">Guarda un recuerdo de esta noche</p>
+        <h2>Comparte tus fotos</h2>
+        <span class="ornament-line" aria-hidden="true"></span>
+        <p>Escanea el código para subir tus fotos de la fiesta.</p>
+      </div>
+      <img class="memories__qr" src="frame.png" alt="Código QR para compartir fotos">
+    </section>
+
+    <section class="rsvp section-reveal" id="confirmacion">
+      <div class="rsvp__inner">
+        <p class="eyebrow">¡Espero que puedas acompañarme!</p>
+        <h2>Confirma tu asistencia</h2>
+        <p id="pase-cupo" class="rsvp__quota" hidden></p>
+        <p>Escribe tu nombre completo para preparar tu mensaje de confirmación.</p>
+        <!-- <p class="rsvp__ticket-note">La familia prepara cada pase con el cupo asignado. El QR abre esta invitación e indica los lugares autorizados.</p> -->
+        <form id="form-rsvp">
+          <label for="nombre">Tu nombre completo</label>
+          <input type="text" id="nombre" name="nombre" placeholder="Nombre y apellidos" autocomplete="name" minlength="3" maxlength="120" required>
+          <div class="rsvp__actions">
+            <button class="button button--dark" type="submit" name="confirmacion" value="Mamá"><svg class="whatsapp-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 11.7a8.4 8.4 0 0 1-12.4 7.4L3 20.5l1.5-4.9a8.4 8.4 0 1 1 16-3.9Z"/><path d="M8.8 8.1c.2-.5.4-.5.7-.5h.5c.2 0 .4.1.5.4l.8 1.8c.1.2.1.4 0 .6l-.5.7c-.2.2-.3.4-.1.7.2.4.8 1.3 1.7 2 .8.7 1.5.9 1.8 1 .3.1.5 0 .7-.2l.8-.9c.2-.2.4-.2.7-.1l1.7.8c.3.1.4.3.4.5s-.1 1-.6 1.4c-.5.5-1.1.7-1.8.7s-2-.3-3.8-1.4c-2.2-1.3-3.6-3.8-3.7-3.9-.1-.2-.9-1.2-.9-2.3 0-1.1.5-1.7.7-1.9Z"/></svg>CONFIRMAR MÀMA <span aria-hidden="true">↗</span></button>
+            <button class="button button--dark" type="submit" name="confirmacion" value="Papá"><svg class="whatsapp-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 11.7a8.4 8.4 0 0 1-12.4 7.4L3 20.5l1.5-4.9a8.4 8.4 0 1 1 16-3.9Z"/><path d="M8.8 8.1c.2-.5.4-.5.7-.5h.5c.2 0 .4.1.5.4l.8 1.8c.1.2.1.4 0 .6l-.5.7c-.2.2-.3.4-.1.7.2.4.8 1.3 1.7 2 .8.7 1.5.9 1.8 1 .3.1.5 0 .7-.2l.8-.9c.2-.2.4-.2.7-.1l1.7.8c.3.1.4.3.4.5s-.1 1-.6 1.4c-.5.5-1.1.7-1.8.7s-2-.3-3.8-1.4c-2.2-1.3-3.6-3.8-3.7-3.9-.1-.2-.9-1.2-.9-2.3 0-1.1.5-1.7.7-1.9Z"/></svg>CONFIRMAR PÀPA <span aria-hidden="true">↗</span></button>
+          </div>
+        </form>
+        <p class="rsvp__message" id="mensaje" role="status" aria-live="polite"></p>
+      </div>
+    </section>
+    <footer class="footer">
+      <canvas class="footer__confetti" id="footer-confetti" aria-hidden="true"></canvas>
+      <div class="footer__content">
+        <p class="eyebrow">Con todo mi cariño</p>
+        <p class="footer__message">¡Te espero en mi fiesta de XV para que sigamos compartiendo momentos únicos!</p>
+        <p class="footer__no-faltes">¡No faltes!</p>
+        <p class="footer__names">Ingrid Abril Silva Mejìa</p>
+        <p class="footer__subtitle">mis quince años</p>
+        <p>6 de febrero de 2027 · 5:00 PM</p>
+      </div>
+    </footer>
+  </main>
+
+  <canvas id="trivia-confetti" aria-hidden="true"></canvas>
+  <script src="invitacion.js"></script>
+</body>
+</html>
