@@ -477,7 +477,7 @@ img, video, iframe { max-width: 100%; }
 .footer .eyebrow { color: #e6c3b8; }
 .footer__message { max-width: 720px; margin: 22px auto 0; color: #f1c8d3; font: 500 clamp(26px, 5vw, 42px)/1.2 var(--serif); }
 .footer__no-faltes { margin: 32px 0; color: #f1c8d3; font: 500 clamp(26px, 5vw, 38px)/1.1 var(--serif); }
-.footer__names { margin: 0; color: #e6a9bc; font: 600 clamp(28px, 6vw, 52px)/1.1 var(--serif); text-transform: uppercase; overflow-wrap: anywhere; }
+.footer__names { margin: 0; color: #e6a9bc; font: 600 clamp(28px, 6vw, 52px)/1.1 var(--serif); overflow-wrap: anywhere; }
 .footer__subtitle { margin: 2px 0 0; color: white; font: italic 500 clamp(25px, 5vw, 38px)/1.1 var(--serif); }
 .footer > p:last-child { margin: 10px 0 0; color: #eadde1; font-size: 11px; letter-spacing: 1px; }
 
